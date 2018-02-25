@@ -1,19 +1,14 @@
 {
-  "name": "electron-quick-start",
+  "name": "photoApp",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "",
-  "keywords": [],
-  "author": "",
-  "license": "",
-  "devDependencies": {
-    "electron": "~1.8.2"
-  },
+  "repository": "https://github.com/dagoodrich13/photoApp",
+  "author": "David Goodrich",
+  "license": "MIT",
   "dependencies": {
-    "bulma": "^0.6.2"
+    "electron": "^1.8.2"
   }
 }
