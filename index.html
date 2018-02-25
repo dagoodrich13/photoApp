@@ -10,24 +10,19 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 <body>
-  <div class='wrapper'>
-    <div class='letter'>
-      <div class="field">
-        <h1 class="title is-primary">
-          Choose Files to Edit
-        </h1>
-        <label class="label">Files to Edit</label>
-        <div class="control">
-          <input type="file" accept=".png,.jpeg,.jpg,.gif" class="input" multiple>
-        </div>
-        <div class="control">
-          <button class="button is-primary">Submit</button>
-        </div>
+  <div class="wrapperSpace">
+    <div class='wrapper'>
+      <div class="drag-files" id="drag-files" ondrop="dropped(event)">
+
+      </div>
+      <div class='letter'>
+
       </div>
     </div>
-    <div class='letter'>
-
-    </div>
   </div>
+
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="javascript.js"></script>
 </body>
 </html>

@@ -9,6 +9,8 @@
   "author": "David Goodrich",
   "license": "MIT",
   "dependencies": {
-    "electron": "^1.8.2"
+    "bulma": "^0.6.2",
+    "electron": "^1.8.2",
+    "jquery": "^3.3.1"
   }
 }
