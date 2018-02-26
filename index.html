@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='photoApp'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,59 @@
   <title>Elodie</title>
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
-<body>
-  <div class="wrapperSpace">
-    <div class='wrapper'>
-      <div class="drag-files" id="drag-files" ondrop="dropped(event)">
-
+<body ng-controller="imageController">
+  <div class="wrapperSpace" dg-draggable dg-drop="myDrop(event)">
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Update Photo Data
+          </h1>
+          <h2 class="subtitle">
+            Drag photos into the window or browse to files...
+          </h2>
+        </div>
       </div>
-      <div class='letter'>
-
+    </section>
+    <div class='wrapper'>
+      <div class="forms">
+        <div class="field">
+          <label class="label">
+            Change Date
+          </label>
+          <div class="control">
+            <input type="text" class="input" placeholder="yr-day-month e.g. 1995-29-01">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Change location</label>
+          <div class="control">
+            <input type="text" class="input" placeholder="e.g. Springvile,UT">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button class="button is-link" id="submit-button">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="previews" layout="row">
+        <div class="previewContainer" ng-repeat="file in files">
+          <img src="{{file}}" alt="oops" class="previewImage">
+        </div>
       </div>
     </div>
   </div>
 
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-aria/angular-aria.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.js"></script>
+  <script src="node_modules/angular-material/angular-material.js"></script>
   <script src="javascript.js"></script>
 </body>
 </html>

@@ -1,26 +1,37 @@
-/* body {
-  background-color: rgb(59, 59, 64);
-} */
+body{
+  overflow: hidden;
+}
 .wrapperSpace{
   width: 100%;
   height: 100%;
 }
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1px;
-  height: 100vw
-}
-.letter {
-  padding:15px;
-  justify-content: center;
-  display: flex;
   width: 100%;
-  height: 100%
+  height: 100%;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr
 }
-.drag-files{
-  background-color: rgb(3, 212, 31);
+.previewContainer{
+  width:100px;
+  height:100px;
+  min-width: 100px;
+  min-height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5px;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-.drag-files:hover{
-  background-color: red;
+.previews{
+  overflow-x: scroll;
+}
+.previewImage{
+  max-width:calc(100% - 15px);
+  max-height:calc(100% - 15px);
+  min-width: calc(100% - 15px);
+  min-height: calc(100% - 15px);
+  border-radius: 12px;
 }

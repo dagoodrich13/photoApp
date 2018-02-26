@@ -9,8 +9,14 @@
   "author": "David Goodrich",
   "license": "MIT",
   "dependencies": {
+    "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
+    "angular-aria": "^1.6.9",
+    "angular-material": "^1.1.7",
+    "angular-messages": "^1.6.9",
     "bulma": "^0.6.2",
     "electron": "^1.8.2",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "python-shell": "^0.5.0"
   }
 }
